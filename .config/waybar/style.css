@@ -1,0 +1,58 @@
+@import "mocha.css";
+
+* {
+  all: unset;
+  font-family: "Jetbrains Mono Nerd Font Propo", monospace
+}
+
+window#waybar {
+    background-color: alpha(@base, 0.8);
+  color: @text;
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
+  border-color: @lavender;
+}
+
+#workspaces {
+  min-width: 100px;
+  padding: 2px 4px;
+  margin: 5px 0;
+  border-radius: 99px
+}
+
+#workspaces button {
+  background-color: alpha(@crust, 0.8);
+  color: @text;
+  padding: 0px 5px;
+  border-radius: 99px;
+  margin: 0 2px;
+  min-width: 25px;
+}
+
+#workspaces button.active {
+  background-color: @lavender;
+  color: @crust;
+}
+
+.modules-left {
+  margin-left: 12px
+}
+
+.modules-right {
+  margin-right: 12px
+}
+
+#battery {
+  margin: 0 12px;
+}
+
+#bluetooth {
+  margin: 0 12px;
+}
+
+tooltip {
+  background-color: alpha(@base, 0.8);
+  border-radius: 10px;
+  border: 2px solid @lavender;
+  color: @text;
+}

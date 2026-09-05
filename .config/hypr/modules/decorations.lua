@@ -70,7 +70,7 @@ hl.curve("slow", { type = "spring", mass = 3, stiffness = 100, dampening = 2*mat
 
 hl.animation({ leaf = "global",        enabled = true,  speed = 1,   spring = "mid" })
 hl.animation({ leaf = "border",        enabled = true,  speed = 1, spring = "mid" })
-hl.animation({ leaf = "windows",       enabled = true,  speed = 1, spring = "quick",  style = "popin 80%" })
+hl.animation({ leaf = "windows",       enabled = true,  speed = 1, spring = "quick",  style = "slide" })
 hl.animation({ leaf = "fade",          enabled = true,  speed = 1, spring = "mid" })
 hl.animation({ leaf = "layersIn",  enabled = true,  speed = 1, spring = "mid" })
 hl.animation({ leaf = "layersOut", enabled = true,  speed = 1, spring = "quick" })

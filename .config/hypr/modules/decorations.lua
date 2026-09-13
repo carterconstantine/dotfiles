@@ -32,9 +32,9 @@ hl.config({
 
         shadow = {
             enabled      = true,
-            range        = 4,
+            range        = 10,
             render_power = 3,
-            color        = 0xee1a1a1a,
+            color        = 0x7f1e1e2e,
         },
 
         blur = {

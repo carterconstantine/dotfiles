@@ -8,7 +8,7 @@ window#osd {
   background: alpha(@base, 0.8);
   border-radius: 10px;
   border: 2px solid @lavender;
-  color: #cdd6f4;
+  color: @text;
   padding: 12px;
 }
 

@@ -1,0 +1,5 @@
+[server]
+top_margin = 0.15
+show_percentage = true
+keyboard_backlight = true
+duration = 1000

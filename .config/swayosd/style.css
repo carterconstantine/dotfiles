@@ -1,0 +1,30 @@
+@import "colors.css";
+
+* {
+    all: unset;
+}
+
+window#osd {
+  background: alpha(@base, 0.8);
+  border-radius: 10px;
+  border: 2px solid @lavender;
+  color: #cdd6f4;
+  padding: 12px;
+}
+
+image {
+  -gtk-icon-size: 32px;
+  color: @lavender;
+}
+
+trough {
+  background: alpha(@crust, 0.8);
+  min-height: 10px;
+  border-radius:999px;
+}
+
+progress {
+  background: @lavender;
+  min-height: 10px;
+  border-radius: 999px;
+}

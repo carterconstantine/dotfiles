@@ -82,3 +82,12 @@ hl.layer_rule({
 
     blur = true
 })
+
+hl.layer_rule({
+    name = "swayosd",
+    match = { namespace = "swayosd" },
+
+    animation = "slide top",
+    ignore_alpha = 0,
+    blur = true
+})

@@ -18,3 +18,7 @@ Credit to:
 <img width="1920" height="1080" alt="Launcher" src="https://github.com/user-attachments/assets/15aec1bc-2b41-46c8-85c4-5155fdd4a4c2" />
 
 <img width="1920" height="1080" alt="Notifications" src="https://github.com/user-attachments/assets/0c8e294c-4dea-4ab2-8377-8037d5f6b7eb" />
+
+# Planned:
+
+Replace most shell software with my own QuickShell config, starting with Waybar. Aiming for visual parity.

@@ -7,6 +7,14 @@ local terminal    = "kitty"
 local fileManager = "nemo"
 local menu = "pkill rofi || ~/.config/rofi/launcher.sh"
 local notifs = "swaync-client -t"
+local text = "code"
+local browser = "firefox"
+local cad = "freecad"
+local slicer = "flatpak run com.bambulab.BambuStudio"
+local games = "steam"
+local discord = "equibop %U"
+local toolbox = "jetbrains-toolbox"
+local music = "spotify-launcher"
 
 ---------------------
 ---- KEYBINDINGS ----
@@ -14,20 +22,28 @@ local notifs = "swaync-client -t"
 
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
--- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
-hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
 local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
--- closeWindowBind:set_enabled(false)
-hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
+hl.bind(mainMod .. "+ ALT + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
-hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
-hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(notifs))
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd("hyprshot -m region"))
 hl.bind(mainMod .. " + SHIFT + Print", hl.dsp.exec_cmd("hyprshot -m output"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("wlogout"))
+
+-- App Binds
+hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
+hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
+hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(notifs))
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
+hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(text))
+hl.bind(mainMod .. " + J", hl.dsp.exec_cmd(toolbox))
+hl.bind(mainMod .. " + M", hl.dsp.exec_cmd(music))
+
+hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd(cad))
+hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd(slicer))
+hl.bind(mainMod .. " + SHIFT + G", hl.dsp.exec_cmd(games))
+hl.bind(mainMod .. " + SHIFT + D", hl.dsp.exec_cmd(discord))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))

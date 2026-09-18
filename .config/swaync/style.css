@@ -11,7 +11,7 @@
 	--border-radius-xl: 10px;
 
 	/* Shadows: set to none to disable */
-	--shadow: 2px 4px 10px rgba(0,0,0,0.15);
+	--shadow: none;
 }
 
 .notification {
@@ -199,12 +199,13 @@
 .widget-mpris {
 	border-radius: var(--border-radius);
 	box-shadow: var(--shadow);
+	background: @background-alt;
 }
 
 .mpris-overlay {
 	border-radius: var(--border-radius);
 	padding: 10px;
-	background: @background;
+	background: @background-alt;
 }
 
 /* Control buttons container  */

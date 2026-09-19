@@ -1,5 +1,5 @@
 # dotfiles
-A collection of my hyprland dotfiles! Will not be updated often because I don't daily drive hyprland, but I figured it'd be fun to tinker a bit and make these.
+A collection of my hyprland dotfiles! This is an opinionated and very subject to change setup. Do not expect stability between updates. These are my personal configs, and they will naturally change as I change my workflow/software stack/etc. 
 
 While I at least edited all parts of these dotfiles, most parts were not originally made by me.
 
@@ -18,7 +18,3 @@ Credit to:
 <img width="1920" height="1080" alt="Launcher" src="https://github.com/user-attachments/assets/15aec1bc-2b41-46c8-85c4-5155fdd4a4c2" />
 
 <img width="1920" height="1080" alt="Notifications" src="https://github.com/user-attachments/assets/0c8e294c-4dea-4ab2-8377-8037d5f6b7eb" />
-
-# Planned:
-
-Replace most shell software with my own QuickShell config, starting with Waybar. Aiming for visual parity.
